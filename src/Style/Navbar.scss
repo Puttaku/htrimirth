@@ -1,0 +1,39 @@
+@import 'misc';
+
+$pic_size : 36px;
+$margin : 22px;
+$marginLeft : 60px;
+$fontsize : 20px;
+@font-face {
+    font-family: "Cocogoose";
+    src: url("../Asset/Font/Cocogoose_trial.otf");
+}
+.Navbar-Container{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    display: flex;
+}
+.menu-list{
+    text-decoration: none;
+    font-family: "Cocogoose";
+    font-size: $fontsize;
+    color: #1b9696;
+    margin-left: $marginLeft;
+}
+.menu{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    margin-left: $marginLeft;
+}
+.icon-logo{
+    width: $pic_size;
+    height: $pic_size;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    margin-left: $marginLeft;
+}
