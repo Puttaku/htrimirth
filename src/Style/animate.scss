@@ -1,12 +1,12 @@
 @import "misc";
 .animate-box{
-    width: 60vw;
+    width: 60%;
     height: 15em;
     position: fixed;
     top: 40%;
     right: 0;
     overflow: hidden;
-    background-color: greenyellow;
+    background-color: #1b9696;
 }
 .element-box{
     width: 100%;
@@ -21,14 +21,14 @@
     width: 500px;
     height: 20px;
     background-color: #1b9696;
-    transform: rotate(45deg) translateY(180px);
+    transform: rotate(60deg) translateY(180px);
 }
 @keyframes animatebg{
     from {
         transform: translateX(-320px);
     }
     to {
-        transform: translateX(-285px);
+        transform: translateX(-272px);
     }
 }
 @media only screen and (min-width : 1367px){
