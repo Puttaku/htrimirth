@@ -1,3 +1,32 @@
+
 .nomarginLeft{
     margin-left: 0 !important;
+}
+.green{
+    background-color: #33a9aa !important;
+}
+.red{
+    background-color: #db4747;
+}
+.greentext{
+    color: #33a9aa !important;
+}
+.redtext{
+    color: #db4747;
+}
+.whitetext{
+    color: white;
+}
+.bigtext{
+    font-size: 72px;
+    margin: 0;
+}
+@media only screen and (min-width : 1367px){
+    .bigtext{
+        font-size: 144px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width : 1366px){
+    
 }

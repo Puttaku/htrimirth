@@ -1,0 +1,56 @@
+@import "misc";
+.animate-box{
+    width: 60vw;
+    height: 15em;
+    position: fixed;
+    top: 40%;
+    right: 0;
+    overflow: hidden;
+    background-color: greenyellow;
+}
+.element-box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    animation: animatebg 1s infinite linear;
+}
+.stripe-element-container{
+    width: 48px;
+}
+.stripe-element{
+    width: 500px;
+    height: 20px;
+    background-color: #1b9696;
+    transform: rotate(45deg) translateY(180px);
+}
+@keyframes animatebg{
+    from {
+        transform: translateX(-320px);
+    }
+    to {
+        transform: translateX(-285px);
+    }
+}
+@media only screen and (min-width : 1367px){
+    .animate-box{
+        height: 30em;
+    }
+    .element-box{
+        height: 30em;
+    }
+    .stripe-element-container{
+        width: 96px;
+    }
+    .stripe-element{
+        width: 1000px;
+        height: 40px;
+    }
+    @keyframes animatebg{
+        from {
+            transform: translateX(-720px);
+        }
+        to {
+            transform: translateX(-625px);
+        }
+    }
+}
