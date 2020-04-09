@@ -11,3 +11,10 @@
     top: calc(85px + (8vh));
     left: calc(50% - 30vw);
 }
+
+@media only screen and (min-width : 1367px){
+    .Card{
+        top: calc(180px + (8vh));
+        left: calc(45% - 30vw);
+    }
+}
