@@ -1,0 +1,13 @@
+@import 'misc';
+.Card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: fit-content;
+    position: fixed;
+    top: calc(85px + (8vh));
+    left: calc(50% - 30vw);
+}

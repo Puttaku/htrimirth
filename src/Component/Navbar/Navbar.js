@@ -8,11 +8,11 @@ export default class Navbar extends Component {
             <div className="Navbar-Container">
                 <img className="icon-logo" src={logo} alt="logo"/>
                 <div className="menu">
-                    <Link to="/" className="menu-list nomarginLeft">Home</Link>
-                    <Link to="/" className="menu-list">Profile</Link>
-                    <Link to="/" className="menu-list">Works</Link>
-                    <Link to="/" className="menu-list">Skills</Link>
-                    <Link to="/" className="menu-list">Contact</Link>
+                    <Link to="/" className="menu-list nomarginLeft">HOME</Link>
+                    <Link to="/" className="menu-list">PROFILE</Link>
+                    <Link to="/" className="menu-list">WORKS</Link>
+                    <Link to="/" className="menu-list">SKILLS</Link>
+                    <Link to="/" className="menu-list">CONTACT</Link>
                 </div>
             </div>
         )
