@@ -2,7 +2,7 @@
 @import 'font';
 $pic_size : 36px;
 $margin : 22px;
-$marginLeft : 60px;
+$marginLeft : calc(8vw - 10px);
 $fontsize : 20px;
 .Navbar-Container{
     width: 100vw;
@@ -32,4 +32,39 @@ $fontsize : 20px;
     margin-top: $margin;
     margin-bottom: $margin;
     margin-left: $marginLeft;
+}
+@media only screen and (max-width : 1039px){
+    .menu-list{
+        font-size: 16px;
+    }
+    .Navbar-Container{
+        height: 60px;
+    }
+    .menu{
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+    .icon-logo{
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .menu-list{
+        font-size: 14px;
+    }
+    .Navbar-Container{
+        height: 50px;
+    }
+    .menu{
+        margin-top: 8px;
+        margin-bottom: 7px;
+    }
+    .icon-logo{
+        width: 24px;
+        height: 24px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
 }
