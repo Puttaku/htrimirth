@@ -10,6 +10,7 @@
     position: fixed;
     top: calc(105px + (15vh));
     left: calc(50% - 25vw);
+    z-index: 1;
 }
 
 @media only screen and (min-width : 1367px){
