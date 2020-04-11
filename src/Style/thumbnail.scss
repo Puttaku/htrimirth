@@ -1,0 +1,16 @@
+@import "misc";
+.thumb-container{
+    position: fixed;
+    right: 0px;
+    margin: 0;
+    transform: rotate(90deg);
+    top: 100px;
+}
+.thumb-container > p{
+    position: absolute;
+}
+.first-order{
+    z-index: 2;
+    top: -10px;
+    left: 150px;
+}
