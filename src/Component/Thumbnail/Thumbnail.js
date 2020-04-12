@@ -22,7 +22,7 @@ export default class Thumbnail extends Component {
     render() {
         return (
             <div class="thumb-container">
-                <p className="whitetext thumbtext first-order">{this.state.noHeadtext}</p>
+                <p className="whitetext thumbtext first-order" style={{left : this.state.text === "WORK" ? "200px" : "150px"}}>{this.state.noHeadtext}</p>
                 <p className="redtext thumbtext second-order">:{this.state.text}</p>
             </div>
         )
