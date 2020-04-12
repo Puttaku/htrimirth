@@ -13,7 +13,8 @@ export default class Thumbnail extends Component {
         var text = this.props.text;
         this.setState({
             text : text,
-            noHeadtext : text.substring(1)
+            noHeadtext : text.substring(1),
+            headText : text.substring(0,1)
         })
     }
     componentWillMount(){
@@ -22,7 +23,10 @@ export default class Thumbnail extends Component {
     render() {
         return (
             <div class="thumb-container">
-                <p className="whitetext thumbtext first-order" style={{left : this.state.text === "WORK" ? "200px" : "150px"}}>{this.state.noHeadtext}</p>
+                <div className="first-order">
+                    <p className="whitetext thumbtext">{this.state.headText}</p>
+                    <p className="whitetext thumbtext">{this.state.noHeadtext}</p>
+                </div>
                 <p className="redtext thumbtext second-order">:{this.state.text}</p>
             </div>
         )
