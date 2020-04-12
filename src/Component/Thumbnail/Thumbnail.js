@@ -24,7 +24,7 @@ export default class Thumbnail extends Component {
         return (
             <div class="thumb-container">
                 <div className="first-order">
-                    <p className="whitetext thumbtext">{this.state.headText}</p>
+                    <p className="invitext thumbtext">{this.state.headText}</p>
                     <p className="whitetext thumbtext">{this.state.noHeadtext}</p>
                 </div>
                 <p className="redtext thumbtext second-order">:{this.state.text}</p>
