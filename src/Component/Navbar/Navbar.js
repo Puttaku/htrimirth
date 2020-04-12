@@ -9,10 +9,10 @@ export default class Navbar extends Component {
                 <img className="icon-logo" src={logo} alt="logo"/>
                 <div className="menu">
                     <Link to="/" className="menu-list nomarginLeft">HOME</Link>
-                    <Link to="/" className="menu-list">PROFILE</Link>
-                    <Link to="/" className="menu-list">WORKS</Link>
-                    <Link to="/" className="menu-list">SKILLS</Link>
-                    <Link to="/" className="menu-list">CONTACT</Link>
+                    <Link to="/profile" className="menu-list">PROFILE</Link>
+                    <Link to="/work" className="menu-list">WORKS</Link>
+                    <Link to="/skill" className="menu-list">SKILLS</Link>
+                    <Link to="/contact" className="menu-list">CONTACT</Link>
                 </div>
             </div>
         )
