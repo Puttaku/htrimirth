@@ -36,6 +36,20 @@
     font-size: 144px;
     margin: 0;
 }
+.subheadtext{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.Card-container{
+    display: flex;
+    position: fixed;
+    top: calc(105px + (15vh));
+    left: calc(50% - 25vw);
+}
+.content{
+    top: calc(105px + (5vh));
+}
 @media only screen and (min-width : 1367px){
     .bigtext{
         font-size: 144px;
@@ -44,6 +58,19 @@
     .thumbtext{
         font-size: 225px;
         margin: 0;
+    }
+    .subheadtext{
+        font-size: 48px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .contentText{
+        font-size: 36px;
+        margin: 0;
+    }
+    .Card-container{
+        top: calc(180px + (8vh));
+        left: calc(45% - 30vw);
     }
 }
 @media only screen and (max-width : 1366px){

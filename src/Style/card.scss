@@ -3,19 +3,13 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: left;
     background-color: red;
     width: fit-content;
-    position: fixed;
-    top: calc(105px + (15vh));
-    left: calc(50% - 25vw);
+    height: fit-content;
     z-index: 1;
 }
-
-@media only screen and (min-width : 1367px){
-    .Card{
-        top: calc(180px + (8vh));
-        left: calc(45% - 30vw);
-    }
+.Card:nth-child(2){
+    margin-left: 10px;
 }

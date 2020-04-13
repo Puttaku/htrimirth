@@ -4,7 +4,7 @@ import Thumb from "../Thumbnail/Thumbnail"
 export default class Work extends Component {
     render() {
         return (
-            <div>
+            <div className="Card-container">
                 <Card color="red">
                     <p className="bigtext whitetext">WORK</p>
                 </Card>

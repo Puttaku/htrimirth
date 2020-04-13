@@ -9,6 +9,8 @@ $fontsize : 20px;
     height: 80px;
     background-color: white;
     display: flex;
+    z-index: 5;
+    position: sticky;
 }
 .menu-list{
     text-decoration: none;
