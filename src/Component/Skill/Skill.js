@@ -27,7 +27,7 @@ export default class Skill extends Component {
                     <p className="contentText whitetext">Drawing</p>
                     <p className="contentText whitetext">Painting</p>
                 </Card>
-                <Thumb text="SKILL"/>
+                <Thumb text="SKILLS"/>
             </div>
         )
     }

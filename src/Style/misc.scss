@@ -9,6 +9,9 @@ $bigfontsize : 144px;
 .bigmarginBottom{
     margin-bottom: 20px !important;
 }
+.hugemarginBottom{
+    margin-bottom: 40px !important;
+}
 .green{
     background-color: #33a9aa !important;
 }
@@ -41,7 +44,7 @@ $bigfontsize : 144px;
     margin: 0;
 }
 .thumbtext{
-    font-size: 144px;
+    font-size: 150px;
     margin: 0;
 }
 .subheadtext{
@@ -50,7 +53,10 @@ $bigfontsize : 144px;
     margin-bottom: 20px;
 }
 .workmenutext{
-
+    font-size: 10px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .Card-container{
     display: flex;
@@ -68,20 +74,37 @@ $bigfontsize : 144px;
     right: 0;
     height: 1em;
 }
+.workmenu{
+    padding: 15px;
+    padding-bottom: 80px;
+}
 .skillPage{
     top: calc(105px + (5vh));
     right: calc(65% - 335px);
 }
 .skill{
-    padding-right: 64px;
+    padding-right: 20px;
+    margin-left: 20px !important;
 }
 .picture{
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 345px;
+    position: relative;
 }
 .contact{
-    top: calc(95px + (15vh));
+    top: calc(110px + (15vh));
     right: calc(65% - 125px);
+}
+.nav-arrow{
+    position: absolute;
+    line-height: 165px;
+    font-size: 90px;
+    color: white;
+    margin-left: 40px;
+}
+.nav-arrow.right{
+    right: 0;
+    margin-right: 40px;
 }
 @media only screen and (min-width : 1367px){
     .bigtext{

@@ -1,4 +1,4 @@
-@import 'misc';
+
 .Card{
     display: flex;
     flex-direction: column;
@@ -13,5 +13,5 @@
     padding: 10px;
 }
 .Card:nth-child(2){
-    margin-left: 20px;
+    margin-left: 48px;
 }

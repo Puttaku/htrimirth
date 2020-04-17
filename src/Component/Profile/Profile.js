@@ -10,12 +10,12 @@ export default class Profile extends Component {
                     <p className="contentText whitetext">26 Oct 1998</p>
                     <p/>
                     <p className="contentText whitetext">Assumption University of Thailand</p>
-                    <p className="contentText whitetext">Communication Art</p>
+                    <p className="contentText whitetext">Communication Arts</p>
                     <p className="contentText whitetext">[2017-Present]</p>
                     <p/>
                     <p className="contentText whitetext">Triam Udom Suksa Pattanakarn School</p>
                     <p className="contentText whitetext">Science and Mathematics Program</p>
-                    <p className="contentText whitetext">[2011-2017]</p>
+                    <p className="contentText whitetext hugemarginBottom">[2011-2017]</p>
                 </Card>
                 <Thumb text="PROFILE"/>
             </div>

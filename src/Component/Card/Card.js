@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "../../Style/card.scss"
-import "../../Style/misc.scss"
 export default class Card extends Component {
     constructor(props){
         super(props);
@@ -8,14 +7,16 @@ export default class Card extends Component {
         this.state = {
             padding: "",
             picture : "",
-            skill : ""
+            skill : "",
+            workmenu : ""
         }
     }
     paddingSet(){
         this.setState({
             padding: this.props.padding ? " Card-padding" : "",
             picture: this.props.picture ? " picture" : "",
-            skill : this.props.skill ? " skill" : ""
+            skill : this.props.skill ? " skill" : "",
+            workmenu : this.props.workmenu ? " workmenu" : "",
         })
     }
     componentWillMount(){
@@ -24,7 +25,7 @@ export default class Card extends Component {
 
     render() {
         return (
-        <div class={"Card " + this.props.color + this.state.padding + this.state.picture + this.state.skill}>{this.props.children}</div>
+        <div class={"Card " + this.props.color + this.state.padding + this.state.picture + this.state.skill + this.state.workmenu}>{this.props.children}</div>
         )
     }
 }

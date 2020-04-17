@@ -8,6 +8,7 @@ import profile from "./Component/Profile/Profile"
 import skill from "./Component/Skill/Skill"
 import work from "./Component/Work/Work"
 import contact from "./Component/Contact/Contact"
+import "./Style/misc.scss"
 function App() {
   return (
     <div className="App">
