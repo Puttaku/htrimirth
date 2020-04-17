@@ -6,7 +6,7 @@ export default class Home extends Component {
         return (
             <div className="Card-container">
                 <Card color="red">
-                    <p className="bigtext whitetext">MIRTH</p>
+                    <p className="bigtext whitetext marginBottom">MIRTH</p>
                 </Card>
                 <Thumb text="PORTFOLIO"/>
             </div>

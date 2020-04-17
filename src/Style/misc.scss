@@ -1,6 +1,13 @@
-
+$fontsize : 96px;
+$bigfontsize : 144px;
 .nomarginLeft{
     margin-left: 0 !important;
+}
+.marginBottom{
+    margin-bottom: 15px !important;
+}
+.bigmarginBottom{
+    margin-bottom: 20px !important;
 }
 .green{
     background-color: #33a9aa !important;
@@ -25,8 +32,9 @@
     opacity: 0;
 }
 .bigtext{
-    font-size: 72px;
+    font-size: $fontsize;
     margin: 0;
+    line-height: $fontsize;
 }
 .contentText{
     font-size: 18px;
@@ -37,18 +45,43 @@
     margin: 0;
 }
 .subheadtext{
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
     margin-bottom: 20px;
+}
+.workmenutext{
+
 }
 .Card-container{
     display: flex;
     position: fixed;
     top: calc(105px + (15vh));
-    left: calc(50% - 25vw);
+    right: calc(65% - 100px);
 }
-.content{
+.profile{
     top: calc(105px + (5vh));
+    right: calc(65% - 200px);
+}
+.work{
+    top: calc(105px + (5vh));
+    left: 80px;
+    right: 0;
+    height: 1em;
+}
+.skillPage{
+    top: calc(105px + (5vh));
+    right: calc(65% - 335px);
+}
+.skill{
+    padding-right: 64px;
+}
+.picture{
+    width: 600px;
+    height: 400px;
+}
+.contact{
+    top: calc(95px + (15vh));
+    right: calc(65% - 125px);
 }
 @media only screen and (min-width : 1367px){
     .bigtext{
@@ -75,4 +108,9 @@
 }
 @media only screen and (max-width : 1366px){
     
+}
+@media only screen and (max-width : 730px){
+    .Card-container{
+        left: 30px;
+    }
 }

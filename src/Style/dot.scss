@@ -10,7 +10,13 @@
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
+    position: relative;
+    z-index: 1;
+    top: 75%;
+    left: -30vw;
+}
+@media only screen and (max-width : 400px){
+    .Three-dot-container{
+        visibility: hidden;
+    }
 }

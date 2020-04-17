@@ -1,6 +1,5 @@
 @import 'misc';
 .Card{
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,6 +9,9 @@
     height: fit-content;
     z-index: 1;
 }
+.Card-padding{
+    padding: 10px;
+}
 .Card:nth-child(2){
-    margin-left: 10px;
+    margin-left: 20px;
 }

@@ -1,5 +1,6 @@
 import "../../Style/animate.scss"
 import React, { Component } from 'react'
+import Threedot from "../Three-dot/Three-dot"
 let bgnum = 44;
 export default class animate extends Component {
     constructor(){
@@ -18,9 +19,12 @@ export default class animate extends Component {
     }
     render() {
         return (
-            <div className="animate-box">
-                <div className="element-box">
-                    {this.bgnum()}
+            <div className = "bg-container">
+                <Threedot/>
+                <div className="animate-box">
+                    <div className="element-box">
+                        {this.bgnum()}
+                    </div>
                 </div>
             </div>
         )

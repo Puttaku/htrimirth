@@ -1,7 +1,7 @@
 @import "misc";
 .thumb-container{
     position: fixed;
-    right: 0px;
+    right: 50px;
     margin: 0;
     transform: rotate(90deg);
     top: 100px;
@@ -15,8 +15,21 @@
     top: -10px;
     left: 55px;
 }
+.second-order{
+    display: flex;
+    z-index: 1;
+}
+.colon{
+    position: relative;
+    top: -10px;
+}
 @media only screen and (min-width : 1367px){
     .first-order{
         left: 80px !important;
+    }
+}
+@media only screen and (max-width : 575px){
+    .thumb-container{
+        visibility: hidden;
     }
 }

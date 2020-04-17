@@ -4,11 +4,11 @@ import Thumb from "../Thumbnail/Thumbnail"
 export default class Contact extends Component {
     render() {
         return (
-            <div className="Card-container">
-                <Card color="red">
+            <div className="Card-container contact">
+                <Card color="red" padding>
                     <p className="contentText whitetext">Instagram : htrimirth</p>
                     <p className="contentText whitetext">Facebook : mirth</p>
-                    <p className="contentText whitetext">Email : htrimirth@gmail.com</p>
+                    <p className="contentText whitetext bigmarginBottom">Email : htrimirth@gmail.com</p>
                 </Card>
                 <Thumb text="CONTACT"/>
             </div>

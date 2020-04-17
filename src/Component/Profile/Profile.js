@@ -4,8 +4,8 @@ import Thumb from "../Thumbnail/Thumbnail"
 export default class Profile extends Component {
     render() {
         return (
-            <div className="Card-container content">
-                <Card color="red">
+            <div className="Card-container profile">
+                <Card color="red" padding>
                     <p className="contentText whitetext">Nonnapoj Wongvisuthirat [Mirth]</p>
                     <p className="contentText whitetext">26 Oct 1998</p>
                     <p/>

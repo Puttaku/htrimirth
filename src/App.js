@@ -4,7 +4,6 @@ import "./Style/App.scss"
 import {Switch,Route} from "react-router-dom"
 import home from "./Component/Home/Home"
 import AnimateBG from "./Component/Animate-bg/animate"
-import Threedot from "./Component/Three-dot/Three-dot"
 import profile from "./Component/Profile/Profile"
 import skill from "./Component/Skill/Skill"
 import work from "./Component/Work/Work"
@@ -14,7 +13,6 @@ function App() {
     <div className="App">
       <Navbar/>
       <AnimateBG/>
-      <Threedot/>
       <Switch>
         <Route exact path="/profile" component={profile}/>
         <Route exact path="/skill" component={skill}/>

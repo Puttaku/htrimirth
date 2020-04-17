@@ -4,8 +4,8 @@ import Thumb from "../Thumbnail/Thumbnail"
 export default class Skill extends Component {
     render() {
         return (
-            <div className="Card-container content">
-                <Card color="red">
+            <div className="Card-container skillPage">
+                <Card color="red" padding>
                     <p className="subheadtext whitetext">COMPUTER <br />PROGRAM</p>
                     <p className="contentText whitetext">Adobe Illustrator</p>
                     <p className="contentText whitetext">Adobe Photoshop</p>
@@ -17,7 +17,7 @@ export default class Skill extends Component {
                     <p className="contentText whitetext">Pro tool</p>
                     <p className="contentText whitetext">Fontlab Studio</p>
                 </Card>
-                <Card color="red">
+                <Card color="red" padding skill>
                     <p className="subheadtext whitetext">SKILL</p>
                     <p className="contentText whitetext">Graphic Design</p>
                     <p className="contentText whitetext">Photography</p>
