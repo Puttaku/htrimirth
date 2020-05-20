@@ -5,6 +5,7 @@
     margin: 0;
     transform: rotate(90deg);
     top: 100px;
+    animation: textin 2s ease-in-out;
 }
 .thumb-container > p, .thumb-container > div{
     position: absolute;
@@ -31,5 +32,17 @@
 @media only screen and (max-width : 575px){
     .thumb-container{
         visibility: hidden;
+    }
+}
+
+@keyframes textin{
+    0%{
+        transform: translateY(-1500px) rotate(90deg);
+    }
+    60%{
+        transform: translateY(100px) rotate(90deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(90deg);
     }
 }

@@ -16,6 +16,7 @@ export default class Skill extends Component {
                     <p className="contentText whitetext">Procreate</p>
                     <p className="contentText whitetext">Pro tool</p>
                     <p className="contentText whitetext">Fontlab Studio</p>
+                    <p className="skillbreak"/>
                 </Card>
                 <Card color="red" padding skill>
                     <p className="subheadtext whitetext">SKILL</p>
@@ -26,6 +27,7 @@ export default class Skill extends Component {
                     <p className="contentText whitetext">Sound Mixing</p>
                     <p className="contentText whitetext">Drawing</p>
                     <p className="contentText whitetext">Painting</p>
+                    <p className="skillbreak"/>
                 </Card>
                 <Thumb text="SKILLS"/>
             </div>
