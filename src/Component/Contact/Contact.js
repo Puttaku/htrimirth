@@ -8,7 +8,11 @@ export default class Contact extends Component {
                 <Card color="red" padding>
                     <p className="contentText whitetext">Instagram : htrimirth</p>
                     <p className="contentText whitetext">Facebook : mirth</p>
-                    <p className="contentText whitetext bigmarginBottom">Email : htrimirth@gmail.com</p>
+                    <div className="emailTextContainer">
+                        <p className="contentText whitetext bigmarginBottom">Email : htrimirth</p>
+                        <p className="contentText whitetext bigmarginBottom attext">@</p>
+                        <p className="contentText whitetext bigmarginBottom">gmail.com</p>
+                    </div>
                 </Card>
                 <Thumb text="CONTACT"/>
             </div>

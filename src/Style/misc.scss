@@ -43,6 +43,9 @@ $bigfontsize : 144px;
     font-size: 18px;
     margin: 0;
 }
+.breakText{
+    margin-block-start: 5px;
+}
 .thumbtext{
     font-size: 150px;
     margin: 0;
@@ -57,6 +60,10 @@ $bigfontsize : 144px;
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+.workmenutext:hover{
+    color: #db4747;
 }
 .Card-container{
     display: flex;
@@ -76,7 +83,8 @@ $bigfontsize : 144px;
 }
 .workmenu{
     padding: 15px;
-    padding-bottom: 80px;
+    padding-top: 28px;
+    padding-bottom: 67px;
 }
 .skillPage{
     top: calc(105px + (5vh));
@@ -101,6 +109,7 @@ $bigfontsize : 144px;
     font-size: 90px;
     color: white;
     margin-left: 40px;
+    cursor: pointer;
 }
 .nav-arrow.right{
     right: 0;

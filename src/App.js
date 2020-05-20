@@ -9,6 +9,7 @@ import skill from "./Component/Skill/Skill"
 import work from "./Component/Work/Work"
 import contact from "./Component/Contact/Contact"
 import "./Style/misc.scss"
+import "./Style/contact.scss"
 function App() {
   return (
     <div className="App">

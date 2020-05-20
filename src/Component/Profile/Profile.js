@@ -8,11 +8,12 @@ export default class Profile extends Component {
                 <Card color="red" padding>
                     <p className="contentText whitetext">Nonnapoj Wongvisuthirat [Mirth]</p>
                     <p className="contentText whitetext">26 Oct 1998</p>
-                    <p/>
+                    <p className="breakText"/>
                     <p className="contentText whitetext">Assumption University of Thailand</p>
                     <p className="contentText whitetext">Communication Arts</p>
+                    <p className="contentText whitetext">Visual Communication Design</p>
                     <p className="contentText whitetext">[2017-Present]</p>
-                    <p/>
+                    <p className="breakText"/>
                     <p className="contentText whitetext">Triam Udom Suksa Pattanakarn School</p>
                     <p className="contentText whitetext">Science and Mathematics Program</p>
                     <p className="contentText whitetext hugemarginBottom">[2011-2017]</p>
