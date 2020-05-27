@@ -151,7 +151,7 @@ $bigfontsize : 144px;
     }
     .skillPage{
         top: calc(105px + (5vh));
-        right: calc(65% - 515px);
+        right: calc(65% - 485px);
     }
     .skill{
         padding-right: 80px;
@@ -160,7 +160,7 @@ $bigfontsize : 144px;
         margin-block-start: 20px;
     }
     .profile{
-        top: calc(255px + (5vh));
+        top: calc(235px + (5vh));
         right: calc(65% - 400px);
     }
     .contact{
@@ -177,7 +177,7 @@ $bigfontsize : 144px;
     .workmenu{
         padding: 15px;
         padding-top: 28px;
-        padding-bottom: 180px;
+        padding-bottom: 220px;
     }
     .work{
         top: calc(105px + (5vh));
@@ -187,11 +187,16 @@ $bigfontsize : 144px;
     }
     .picture{
         width: 1000px;
-        height: 518px;
+        height: 558px;
         position: relative;
     }
     .nav-arrow{
-        font-size: 177px;
+        font-size: 144px;
+        margin-block-start: 197px;
+        margin-block-end: 196px;
+    }
+    .hugemarginBottom {
+        margin-bottom: 60px !important;
     }
 }
 @media only screen and (max-width : 730px){

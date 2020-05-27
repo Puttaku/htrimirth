@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className="Navbar-Container">
-                <img className="icon-logo" src={logo} alt="logo"/>
+                <Link to="/" className=""><img className="icon-logo" src={logo} alt="logo"/></Link>
                 <div className="menu">
                     <Link to="/" className="menu-list nomarginLeft">HOME</Link>
                     <Link to="/profile" className="menu-list">PROFILE</Link>

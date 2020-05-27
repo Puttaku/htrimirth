@@ -4,7 +4,7 @@
     right: 50px;
     margin: 0;
     transform: rotate(90deg);
-    top: 100px;
+    top: 130px;
     animation: textin 2s ease-in-out;
 }
 .thumb-container > p, .thumb-container > div{
@@ -27,6 +27,9 @@
 @media only screen and (min-width : 1367px){
     .first-order{
         left: 80px !important;
+    }
+    .colon{
+        top: -18px;
     }
 }
 @media only screen and (max-width : 575px){
