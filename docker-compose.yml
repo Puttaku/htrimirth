@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  app:
+    container_name: htrimirth_app
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      DIDYOUSEE: Hello-world
