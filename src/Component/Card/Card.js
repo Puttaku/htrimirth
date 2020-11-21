@@ -25,7 +25,7 @@ export default class Card extends Component {
 
     render() {
         return (
-        <div class={"Card " + this.props.color + this.state.padding + this.state.picture + this.state.skill + this.state.workmenu}>{this.props.children}</div>
+        <div className={"Card " + this.props.color + this.state.padding + this.state.picture + this.state.skill + this.state.workmenu}>{this.props.children}</div>
         )
     }
 }

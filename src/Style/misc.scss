@@ -1,5 +1,7 @@
 $fontsize : 96px;
 $bigfontsize : 144px;
+$fontsizemobile : 60px;
+$lineheightmobile : 72px;
 .nomarginLeft{
     margin-left: 0 !important;
 }
@@ -68,8 +70,8 @@ $bigfontsize : 144px;
 .Card-container{
     display: flex;
     position: fixed;
-    top: calc(105px + (15vh));
-    right: calc(65% - 100px);
+    top: calc(190px + (15vh));
+    right: calc(65% - 120px);
 }
 .profile{
     top: calc(105px + (5vh));
@@ -87,7 +89,7 @@ $bigfontsize : 144px;
     padding-bottom: 67px;
 }
 .skillPage{
-    top: calc(105px + (5vh));
+    top: calc(200px + (5vh));
     right: calc(65% - 335px);
 }
 .skill{
@@ -103,7 +105,7 @@ $bigfontsize : 144px;
     position: relative;
 }
 .contact{
-    top: calc(110px + (15vh));
+    top: calc(200px + (15vh));
     right: calc(65% - 125px);
 }
 .nav-arrow{
@@ -199,8 +201,33 @@ $bigfontsize : 144px;
         margin-bottom: 60px !important;
     }
 }
-@media only screen and (max-width : 730px){
+@media only screen and (max-width : 736px){
     .Card-container{
         left: 30px;
+    }
+}
+
+@media only screen and (max-width : 420px){
+    .Card-container{
+        left: 10vw;
+        top: calc(125px + (-5vh));
+    }
+    .bigtext{
+        font-size: $fontsizemobile;
+        margin: 0;
+        line-height: $lineheightmobile;
+    }
+    .thumbtext{
+        font-size: 108px;
+    }
+}
+@media only screen and (min-height : 700px) and (max-height : 799px) and (max-width : 600px){
+    .Card-container{
+        top: calc(145px + (-5vh));
+    }
+}
+@media only screen and (min-height : 800px) and (max-height : 830px) and (max-width : 600px){
+    .Card-container{
+        top: calc(170px + (-5vh));
     }
 }

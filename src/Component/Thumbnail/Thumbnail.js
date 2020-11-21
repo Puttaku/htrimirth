@@ -22,7 +22,7 @@ export default class Thumbnail extends Component {
     }
     render() {
         return (
-            <div class="thumb-container">
+            <div className="thumb-container">
                 <div className="first-order">
                     <p className="invitext thumbtext">{this.state.headText}</p>
                     <p className="whitetext thumbtext">{this.state.noHeadtext}</p>

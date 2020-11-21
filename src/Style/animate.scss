@@ -61,3 +61,12 @@
         }
     }
 }
+
+@media only screen and (max-width : 736px) and (max-width : 600px){
+    .animate-box{
+        top: 20%;
+        left: 20vw;
+        width: 80%;
+        height: 72vw;    
+    }
+}
