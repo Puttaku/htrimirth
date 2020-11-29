@@ -46,14 +46,16 @@ export default class Work extends Component {
     ChangeAlbum = (album) => {
         this.setState({
             album : album,
-            type : 'photo'
+            type : 'photo',
+            img: 0
         })
     }
 
     ChangeVideo = video => {
         this.setState({
             album : video,
-            type : 'video'
+            type : 'video',
+            img: 0
         })
     }
     render() {
