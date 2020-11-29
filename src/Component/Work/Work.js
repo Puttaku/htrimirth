@@ -12,6 +12,12 @@ export default class Work extends Component {
         }
         this.ChangeAlbum = this.ChangeAlbum.bind(this)
     }
+
+    componentDidMount(){
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+    }
     // ${Image.Drawing}
     ChangeImg = (mode) => {
         const {img, album} = this.state

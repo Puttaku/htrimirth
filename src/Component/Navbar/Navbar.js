@@ -40,13 +40,21 @@ export default class Navbar extends Component {
                     <Menuicon/>
                     <Menuicon/>
                 </div>
-                <Link to="/" className=""><img className="icon-logo" src={logo} alt="logo"/></Link>
+                {/* <Link to="/" className=""><img className="icon-logo" src={logo} alt="logo"/></Link>
                 <div className="menu">
                     <Link to="/" className="menu-list nomarginLeft">HOME</Link>
                     <Link to="/profile" className="menu-list">PROFILE</Link>
                     <Link to="/work" className="menu-list">WORKS</Link>
                     <Link to="/skill" className="menu-list">SKILLS</Link>
                     <Link to="/contact" className="menu-list">CONTACT</Link>
+                </div> */}
+                <a href="/" className=""><img className="icon-logo" src={logo} alt="logo"/></a>
+                <div className="menu">
+                    <a href="/" className="menu-list nomarginLeft">HOME</a>
+                    <a href="/profile" className="menu-list">PROFILE</a>
+                    <a href="/work" className="menu-list">WORKS</a>
+                    <a href="/skill" className="menu-list">SKILLS</a>
+                    <a href="/contact" className="menu-list">CONTACT</a>
                 </div>
             </div>
                 {isShow &&
