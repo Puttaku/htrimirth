@@ -6,10 +6,10 @@ export default class Work extends Component {
     constructor(props){
         super(props)
         this.state = {
-            album : Image.Drawing,
+            album : Image.PosterDesign,
             img : 0,
             type : 'photo',
-            multiple : false
+            multiple : true
         }
         this.ChangeAlbum = this.ChangeAlbum.bind(this)
     }
