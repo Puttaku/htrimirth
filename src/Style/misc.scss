@@ -121,10 +121,15 @@ $lineheightmobile : 72px;
     margin-right: 40px;
 }
 .image{
-    width: 100%;
+    width: calc(100% - 120px);
     height: calc(100% - 40px);
     object-fit: contain;
     padding: 20px 0;
+}
+.image-container{
+    width: calc(100% - 120px);
+    height: 100%;
+    margin: 0 120px;
 }
 @media only screen and (min-width : 1367px){
     .bigtext{
@@ -205,6 +210,13 @@ $lineheightmobile : 72px;
     }
     .hugemarginBottom {
         margin-bottom: 60px !important;
+    }
+    .image{
+        width: calc(100% - 140px);
+    }
+    .image-container{
+        width: calc(100% - 140px);
+        margin: 0 140px;
     }
 }
 @media only screen and (max-width : 736px){

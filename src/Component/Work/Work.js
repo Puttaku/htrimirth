@@ -8,7 +8,8 @@ export default class Work extends Component {
         this.state = {
             album : Image.Drawing,
             img : 0,
-            type : 'photo'
+            type : 'photo',
+            multiple : false
         }
         this.ChangeAlbum = this.ChangeAlbum.bind(this)
     }
@@ -17,11 +18,21 @@ export default class Work extends Component {
         document.addEventListener('contextmenu', (e) => {
             e.preventDefault();
         });
+        if(Object.keys(this.state.album).length != 1){
+            this.setState({
+                multiple : false
+            })
+        }
+        else{
+            this.setState({
+                multiple : true
+            })
+        }
     }
     // ${Image.Drawing}
     ChangeImg = (mode) => {
         const {img, album} = this.state
-        if(img == Object.keys(album).length != 1){
+        if(Object.keys(album).length != 1){
             if(mode == 'left'){
                 if(img == 0){
                     this.setState({
@@ -53,7 +64,8 @@ export default class Work extends Component {
         this.setState({
             album : album,
             type : 'photo',
-            img: 0
+            img: 0,
+            multiple : Object.keys(album).length == 1 ? true : false
         })
     }
 
@@ -61,11 +73,12 @@ export default class Work extends Component {
         this.setState({
             album : video,
             type : 'video',
-            img: 0
+            img: 0,
+            multiple : Object.keys(video).length == 1 ? true : false
         })
     }
     render() {
-        const {img, album, type} = this.state
+        const {img, album, type, multiple} = this.state
         return (
             <div className="Card-container work">
                 <Card color="green" workmenu>
@@ -74,21 +87,24 @@ export default class Work extends Component {
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Painting)}}>PAINTING</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Illustration)}}>ILLUSTRAION</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Photography)}}>PHOTOGRAPHY</p>
-                    <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.MotionGraphic)}}>VIDEO PRODUCTION</p>
+                    <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.MotionGraphic)}}>MOTION GRAPHIC</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.TypefaceDesign)}}>TYPEFACE DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.LogoDesign)}}>LOGO DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.PackageDesign)}}>PACKAGE DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.VisualLiteacy)}}>VISUAL LITERACY</p>
                 </Card>
                 <Card color="red" picture>
+                <div className="image-container">
                     { type == 'photo' ?
-                        <img src={album[`img${img}`]} className="image"/> :
-                        <video autoPlay controls muted className="image">
-                            <source src={album[`vid${img}`]} type="video/mp4"/>
-                        </video>
+                        
+                            <img src={album[`img${img}`]} className="image"/> :
+                            <video autoPlay controls muted className="image">
+                                <source src={album[`vid${img}`]} type="video/mp4"/>
+                            </video>   
                     }
-                    <p className="nav-arrow" onClick={() => this.ChangeImg("left")}>&#60;</p>
-                    <p className="nav-arrow right" onClick={() => this.ChangeImg("right")}>&#62;</p>
+                </div>
+                    <p className="nav-arrow" style={{color : multiple ? "#ffffff40" : "white"}} onClick={() => this.ChangeImg("left")}>&#60;</p>
+                    <p className="nav-arrow right" style={{color : multiple ? "#ffffff40" : "white"}} onClick={() => this.ChangeImg("right")}>&#62;</p>
                 </Card>
                 <Thumb text="WORK"/>
             </div>
