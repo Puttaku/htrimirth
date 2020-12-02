@@ -10,6 +10,7 @@ import {Photography} from './PHOTOGRAPHY'
 import {PosterDesign} from './POSTER_DESIGN'
 import {TypefaceDesign} from './TYPEFACE_DESIGN'
 import {VisualLiteacy} from './VISUAL_LITERACY'
+import {Gif} from './GIF'
 
 const GalleryAsset = {
     Drawing,
@@ -23,7 +24,8 @@ const GalleryAsset = {
     Photography,
     PosterDesign,
     TypefaceDesign,
-    VisualLiteacy
+    VisualLiteacy,
+    Gif
 }
 
 export default GalleryAsset

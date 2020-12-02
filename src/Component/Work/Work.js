@@ -46,6 +46,7 @@ export default class Work extends Component {
                 }
             }
             else{
+                console.log("Right")
                 if(img == Object.keys(album).length - 1){
                     this.setState({
                         img : 0
@@ -70,6 +71,7 @@ export default class Work extends Component {
     }
 
     ChangeVideo = video => {
+        console.log(video)
         this.setState({
             album : video,
             type : 'video',
@@ -79,10 +81,13 @@ export default class Work extends Component {
     }
     render() {
         const {img, album, type, multiple} = this.state
+        console.log(img)
         return (
             <div className="Card-container work">
                 <Card color="green" workmenu>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.PosterDesign)}}>POSTER DESIGN</p>
+                    <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Infographic)}}>INFOGRAPHIC</p>
+                    {/* <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.Gif)}}>GIFS</p> */}
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Drawing)}}>DRAWING</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Painting)}}>PAINTING</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Illustration)}}>ILLUSTRAION</p>
@@ -92,6 +97,7 @@ export default class Work extends Component {
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.LogoDesign)}}>LOGO DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.PackageDesign)}}>PACKAGE DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.VisualLiteacy)}}>VISUAL LITERACY</p>
+                    <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Misc)}}>MISC</p>
                 </Card>
                 <Card color="red" picture>
                 <div className="image-container">

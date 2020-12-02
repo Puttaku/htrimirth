@@ -86,7 +86,7 @@ $lineheightmobile : 72px;
 .workmenu{
     padding: 15px;
     padding-top: 28px;
-    padding-bottom: 67px;
+    padding-bottom: 17px;
 }
 .skillPage{
     top: calc(200px + (5vh));
@@ -191,6 +191,7 @@ $lineheightmobile : 72px;
         padding: 15px;
         padding-top: 28px;
         padding-bottom: 220px;
+        max-height: 310px;
     }
     .work{
         top: calc(105px + (5vh));
