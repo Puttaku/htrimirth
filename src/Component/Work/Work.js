@@ -9,7 +9,8 @@ export default class Work extends Component {
             album : Image.PosterDesign,
             img : 0,
             type : 'photo',
-            multiple : true
+            multiple : true,
+            finished : false
         }
         this.ChangeAlbum = this.ChangeAlbum.bind(this)
     }
@@ -31,17 +32,19 @@ export default class Work extends Component {
     }
     // ${Image.Drawing}
     ChangeImg = (mode) => {
-        const {img, album} = this.state
+        const {img, album, type} = this.state
         if(Object.keys(album).length != 1){
             if(mode == 'left'){
                 if(img == 0){
                     this.setState({
-                        img : Object.keys(album).length - 1
+                        img : Object.keys(album).length - 1,
+                        finished : type == 'video' ? true : false
                     })
                 }
                 else{
                     this.setState({
-                        img : img - 1
+                        img : img - 1,
+                        finished : type == 'video' ? true : false
                     })
                 }
             }
@@ -49,12 +52,14 @@ export default class Work extends Component {
                 console.log("Right")
                 if(img == Object.keys(album).length - 1){
                     this.setState({
-                        img : 0
+                        img : 0,
+                        finished : type == 'video' ? true : false
                     })
                 }
                 else{
                     this.setState({
-                        img : img + 1
+                        img : img + 1,
+                        finished : type == 'video' ? true : false
                     })
                 }
             }
@@ -66,7 +71,8 @@ export default class Work extends Component {
             album : album,
             type : 'photo',
             img: 0,
-            multiple : Object.keys(album).length == 1 ? true : false
+            multiple : Object.keys(album).length == 1 ? true : false,
+            finished : false
         })
     }
 
@@ -76,11 +82,12 @@ export default class Work extends Component {
             album : video,
             type : 'video',
             img: 0,
-            multiple : Object.keys(video).length == 1 ? true : false
+            multiple : Object.keys(video).length == 1 ? true : false,
+            finished : true
         })
     }
     render() {
-        const {img, album, type, multiple} = this.state
+        const {img, album, type, multiple, finished} = this.state
         console.log(img)
         return (
             <div className="Card-container work">
@@ -93,6 +100,7 @@ export default class Work extends Component {
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Illustration)}}>ILLUSTRAION</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Photography)}}>PHOTOGRAPHY</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.MotionGraphic)}}>MOTION GRAPHIC</p>
+                    <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.VideoProduction)}}>VIDEO PRODUCTION</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.TypefaceDesign)}}>TYPEFACE DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.LogoDesign)}}>LOGO DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.PackageDesign)}}>PACKAGE DESIGN</p>
@@ -100,11 +108,11 @@ export default class Work extends Component {
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Misc)}}>MISC</p>
                 </Card>
                 <Card color="red" picture>
-                <div className="image-container">
+                <div className="image-container" style={{filter: !finished ? "blur(5px)" : ""}}>
                     { type == 'photo' ?
                         
-                            <img src={album[`img${img}`]} className="image"/> :
-                            <video autoPlay controls muted className="image">
+                            <img src={album[`img${img}`]} className="image" onLoad={() => this.setState({finished : true})}/> :
+                            <video autoPlay controls muted className="image" key={img} onLoad={() => this.setState({finished : true})}>
                                 <source src={album[`vid${img}`]} type="video/mp4"/>
                             </video>   
                     }
