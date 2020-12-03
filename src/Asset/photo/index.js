@@ -11,7 +11,6 @@ import {PosterDesign} from './POSTER_DESIGN'
 import {TypefaceDesign} from './TYPEFACE_DESIGN'
 import {VisualLiteacy} from './VISUAL_LITERACY'
 import {Gif} from './GIF'
-import {VideoProduction} from './VIDEO_PRODUCTION'
 
 const GalleryAsset = {
     Drawing,
