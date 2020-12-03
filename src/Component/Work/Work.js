@@ -100,7 +100,7 @@ export default class Work extends Component {
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Illustration)}}>ILLUSTRAION</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.Photography)}}>PHOTOGRAPHY</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.MotionGraphic)}}>MOTION GRAPHIC</p>
-                    <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.VideoProduction)}}>VIDEO PRODUCTION</p>
+                    {/* <p className="workmenutext whitetext" onClick={() => {this.ChangeVideo(Image.VideoProduction)}}>VIDEO PRODUCTION</p> */}
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.TypefaceDesign)}}>TYPEFACE DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.LogoDesign)}}>LOGO DESIGN</p>
                     <p className="workmenutext whitetext" onClick={() => {this.ChangeAlbum(Image.PackageDesign)}}>PACKAGE DESIGN</p>
