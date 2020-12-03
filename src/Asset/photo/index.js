@@ -26,8 +26,7 @@ const GalleryAsset = {
     PosterDesign,
     TypefaceDesign,
     VisualLiteacy,
-    Gif,
-    VideoProduction
+    Gif
 }
 
 export default GalleryAsset
